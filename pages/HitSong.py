@@ -23,3 +23,4 @@ st.markdown('2. [plamere/spotipy: Spotify Web API 用の軽量 Python ライブ�
 st.markdown('3. [Web API Libraries \| Spotify for Developers](https://developer.spotify.com/documentation/web-api/libraries/#basic-snippets)')
 st.markdown('4. [PythonでSpotify APIを使ってみる \| ハムレット型エンジニアのカンニングノート](https://www.hamlet-engineer.com/posts/spotify01.html#%E3%83%86%E3%82%99%E3%83%A2%E3%81%AE%E5%AE%9F%E8%A1%8C)')
 st.markdown('5. [spotify APIを触ってるときのメモ](https://zenn.dev/arei/scraps/2c0f2db12ecf0c)')
+st.markdown('6. [Secrets management \- Streamlit Docs](https://docs.streamlit.io/streamlit-cloud/get-started/deploy-an-app/connect-to-data-sources/secrets-management)')
