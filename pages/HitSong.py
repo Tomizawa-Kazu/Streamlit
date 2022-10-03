@@ -9,8 +9,10 @@ client_secret = settings.client_secret
 client_credentials_manager = spotipy.oauth2.SpotifyClientCredentials(client_id, client_secret)
 sp = spotipy.Spotify(client_credentials_manager=client_credentials_manager)
 
+# yearのデフォルト値の設定
+year = 2022
 st.text('年代を半角で入力してくだい')
-year=st.text_input('年代：')
+year=st.text_input('年代：2022')
 results = sp.search(q=(f'year:{year}'), limit=50, offset=0, type='track', market='JP')
 for idx, track in enumerate(results['tracks']['items']):
     st.text((idx, track['name']))
