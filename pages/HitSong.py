@@ -13,10 +13,15 @@ sp = spotipy.Spotify(client_credentials_manager=client_credentials_manager)
 year = 2022
 st.text('年代を半角で入力してくだい')
 year=st.text_input('年代：2022')
+st.subheader('ヒット曲')
 results = sp.search(q=(f'year:{year}'), limit=50, offset=0, type='track', market='JP')
 for idx, track in enumerate(results['tracks']['items']):
     st.text((idx, track['name']))
 
+st.subheader('ヒットアーティスト')
+results = sp.search(q=(f'year:{year}'), limit=50, offset=0, type='artist', market='JP')
+for idx, artist in enumerate(results['artists']['items']):
+    st.text((idx, artist['name']))
 st.markdown('#### 参考記事')
 st.markdown('1. [PythonのSpotify APIで指定したアーティストの人気曲を取得する \- Qiita](https://qiita.com/Prgckwb/items/21ec6cdbfa7fcf5aa466)')
 st.markdown('2. [plamere/spotipy: Spotify Web API 用の軽量 Python ライブラリ](https://github.com/plamere/spotipy)')
