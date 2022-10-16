@@ -26,6 +26,10 @@ st.text('仕事のWCFとデスクトップアプリ作成\n')
 st.markdown('6. Google Apps Script')
 st.text('大学の卒業研究　研究室管理システムの作成\n')
 
+st.markdown('7. Terraform')
+st.text('仕事での、webアプリケーションのインフラ構築(AWS)\n')
+
+
 st.write('簡単な経歴　詳しくは、サイドバーのCareer参照')
 st.text('地元の工業高校に入学し、初めてプログラミングに触れる(当時C言語)\n'
         '3年生の課題研究で、モップ掛けするロボットの作成\n')
